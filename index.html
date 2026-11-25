@@ -1,0 +1,65 @@
+<html lang="en-us"><head><script src="/js/game-ready.js?v=3"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' blob:; worker-src 'self' blob:; object-src 'none'">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Grand Theft Auto: Vice City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-is-touch="0" data-state-car="0" data-state-car-gun="0" data-state-gun="0" data-state-bike="0" data-state-menu="1" data-state-cutscene="0" data-state-mobring="0" data-state-job="0" data-state-disable-controls="0" data-state-panzer="0" data-state-car-with-weapon="0" data-state-hunter="0" data-state-scope-mode="0" data-state-scope-gun="0">
+    
+    <div class="wasted-container" hidden="">
+
+    </div>
+    <div class="intro-container">
+        
+
+        <div class="loader-container" style="display: flex;">
+            <div class="progress-bar-container" id="spinner" hidden="">
+                <div class="progress-bar-fill" style="width: 99%;"></div>
+            </div>
+            <div id="status">Click to continue...</div>
+            <div>
+                <progress id="progress" value="135355111" max="136314880"></progress>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="original-game-file" hidden="">
+
+
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+
+    <div class="touch-controls-wrapper">
+        <div id="move"></div>
+        <div id="look"></div>
+
+        <div class="touch-control radio"></div>
+        <div class="touch-control weapon"></div>
+        <div class="touch-control menu"></div>
+        <div class="touch-control fist"></div>
+        <div class="touch-control drift"></div>
+        <div class="touch-control run"></div>
+        <div class="touch-control car getIn"></div>
+        <div class="touch-control left"></div>
+        <div class="touch-control right"></div>
+        <div class="touch-control jump"></div>
+        <div class="touch-control car getOut"></div>
+        <div class="touch-control camera"></div>
+        <div class="touch-control mobile"></div>
+        <div class="touch-control job"></div>
+        <div class="touch-control horn"></div>
+        <div class="touch-control fireRight"></div>
+        <div class="touch-control fireLeft"></div>
+    </div>
+
+    <script src="local-assets.js"></script>
+    <script src="gamepademulator.js"></script>
+    <script src="idbfs.js"></script>
+    <script src="account-saves.js?v=1"></script>
+    <script src="npc-labels.js?v=2"></script>
+    <script src="game.js"></script>
+    <script>document.getElementById('loading-text').remove();</script>
+
+
+</body></html>
